@@ -19,7 +19,7 @@ links: # A list of custom links to add to the top bar of the generated website.
     target: blank 
   - text: Releases
     link: /guides/releases.md
-    icon: ⌛  # Custom target. Use blank to open link in a new window.
+    icon: :hourglass # Custom target. Use blank to open link in a new window.
 footer:
   copyright: "&copy; Copyright [FlockFysh, Inc.](https://flockfysh.tech/) {{ year }}. All rights reserved."
 

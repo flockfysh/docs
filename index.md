@@ -1,3 +1,7 @@
+---
+author: FlockFysh
+---
+
 # Welcome to FlockFysh Docs
 
 Please read the process to get started here : https://retype.com/guides/getting-started/
