@@ -3,9 +3,30 @@ output: .retype
 url: https://flockfysh.tech/
 branding:
   title: FlockFysh
+  
   label: Docs
-links:
-  - text: Getting Started
-    link: https://retype.com/guides/getting-started/
+  logo: static/logo.png
+  logoDark: static/logo-dark.pngIts
+  logoAlign: right
+links: # A list of custom links to add to the top bar of the generated website.
+       # See also: footer.links
+  - text: FlockFysh      # The text to use for the link
+    link: https://flockfysh.tech/ # Link to an internal file or external URL.
+  - text: CheatSheet
+    link: /guides/CLI/cheatsheet.md   # Link to an internal file or external URL.
+    icon: gear      # A custom icon name, :emoji:, <svg>, or path to a file.
+    iconAlign: left # Icon alignment, to the left or right. Default is left.
+    target: blank   # Custom target. Use blank to open link in a new window.
 footer:
-  copyright: "&copy; Copyright {{ year }}. All rights reserved."
+  copyright: "&copy; Copyright [FlockFysh, Inc.](https://flockfysh.tech/) {{ year }}. All rights reserved."
+
+favicon: static/favicon.png # Path to a custom favicon, or.
+                            # just put a favicon.ico in your project root.
+integrations:
+  googleAnalytics:
+    id: ""        # Your Google Analytics measurement id.
+  googleTagManager:
+    id: ""        # Your Google Tag Manager measurement id.
+
+meta:
+  title: " | Widgets" # Appended to the <title> element on all pages.
