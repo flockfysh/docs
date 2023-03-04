@@ -2,6 +2,6 @@ To install
 
 npm install retypeapp --global
 
-then
+then ff
 
 retype watch
