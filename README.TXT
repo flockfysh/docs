@@ -4,4 +4,6 @@ npm install retypeapp --global
 
 then ff
 
-retype watch
+retype watchz
+
+test commit
