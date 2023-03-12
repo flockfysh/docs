@@ -2,7 +2,7 @@
 author: FlockFysh
 ---
 
-# Welcome to FlockFysh Docs
+# Welcome to flockfysh Docs
 
 This is a WORK IN PROGRESS.
 
