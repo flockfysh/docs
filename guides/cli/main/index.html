@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.732508309475">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.732508503892">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
 
     <!-- Primary Meta Tags -->
-    <title>Main | Widgets</title>
-    <meta name="title" content="Main | Widgets">
+    <title>General use | Widgets</title>
+    <meta name="title" content="General use | Widgets">
+    <meta name="description" content="To build the package:" />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.flockfysh.tech/guides/cli/main/" />
@@ -18,20 +19,23 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.flockfysh.tech/guides/cli/main/">
-    <meta property="og:title" content="Main | Widgets">
+    <meta property="og:title" content="General use | Widgets">
+    <meta property="og:description" content="To build the package:">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.flockfysh.tech/guides/cli/main/">
-    <meta property="twitter:title" content="Main | Widgets">
+    <meta property="twitter:title" content="General use | Widgets">
+    <meta property="twitter:description" content="To build the package:">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../../resources/css/retype.css?v=2.4.0.732508309475" rel="stylesheet" />
+    <link href="../../../resources/css/retype.css?v=2.4.0.732508503892" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.732508309475" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.732508503892" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.732508309475" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.732508503892" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../../resources/js/prism.js?v=2.4.0.732508503892" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -193,12 +197,152 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="main" class="break-words">
+<doc-anchor-target id="build-and-upload-to-pypi">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#build-and-upload-to-pypi">#</doc-anchor-trigger>
+        <span>Build and upload to PyPI</span>
+    </h2>
+</doc-anchor-target>
+<p>To build the package:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">pip install build
+python -m build</code></pre>
+</doc-codeblock></div>
+<p>To upload the package:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">pip install twine
+python -m twine upload --repository pypi dist/*</code></pre>
+</doc-codeblock></div>
+<!-- # ffysh
+
+[Download example dataset (**DO NOT EXTRACT
+**)](https://drive.google.com/file/d/1oEETaG6Ra_Ajq5j2awcEXdwmYbW4d2zg/view?usp=sharing) -->
+<doc-anchor-target id="general-use" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#main">#</doc-anchor-trigger>
-        <span>Main</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#general-use">#</doc-anchor-trigger>
+        <span>General use</span>
     </h1>
 </doc-anchor-target>
+<p>Everything you need is stored in the ffysh import or in the ffysh CLI - you don&#x27;t need to worry about its submodules.</p>
+<doc-anchor-target id="create-a-project-and-log-in-to-flockfysh">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#create-a-project-and-log-in-to-flockfysh">#</doc-anchor-trigger>
+        <span>Create a project and log in to Flockfysh</span>
+    </h2>
+</doc-anchor-target>
+<ol>
+<li>Ensure your current working directory is correct.</li>
+<li>From the terminal, run these two commands:
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">ffysh init
+ffysh login</code></pre>
+</doc-codeblock></div>
+</li>
+<li>Log in to Flockfysh using the new browser window and click <code v-pre>Approve</code> to allow ffysh to use your account.</li>
+</ol>
+<doc-anchor-target id="datasets">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#datasets">#</doc-anchor-trigger>
+        <span>Datasets</span>
+    </h2>
+</doc-anchor-target>
+<ol>
+<li><p>You&#x27;ll first need to create a Dataset object first, using the 24-character ID of the dataset you want.
+If the dataset does not exist, an error will be thrown.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">from ffysh import Dataset
+
+dataset = Dataset(&quot;some_dataset_id&quot;)</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>From there, you can create a stream object.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">stream = dataset.create_stream()</code></pre>
+</doc-codeblock></div>
+</li>
+</ol>
+<p>Additional dataset attributes and methods:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python"># Print dataset ID.
+print(dataset.dataset_id)</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="streams">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#streams">#</doc-anchor-trigger>
+        <span>Streams</span>
+    </h2>
+</doc-anchor-target>
+<p>Streams are the basic unit of operation in ffysh.
+Each stream is a lazy-loaded snapshot of a dataset, and it expands as much as the user needs.
+Alternatively, you can use it as if it is a Python list.</p>
+<ol>
+<li><p>First, store the ID of the stream for later use.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">with open(&quot;stream_id.json&quot;, &quot;w&quot;) as file:
+    json.dump({&quot;id&quot;: stream.stream_id}, file)</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>This allows the stream to reload from disk.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">from ffysh import Stream
+
+with open(&quot;stream_id.json&quot;, &quot;w&quot;) as file:
+   stream = Stream.load(json.load(file)[&quot;id&quot;]</code></pre>
+</doc-codeblock></div>
+<p>Note that each stream instance can only be created or loaded once, and if it is load twice, the old stream instance
+will be returned.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">with open(&quot;stream_id.json&quot;, &quot;w&quot;) as file:
+   stream2 = Stream.load(json.load(file)[&quot;id&quot;]
+
+print(stream is stream2) # True</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>Stream methods:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">from ffysh import Stream
+
+with open(&quot;stream_id.json&quot;, &quot;w&quot;) as file:
+    stream = Stream.load(json.load(file)[&quot;id&quot;]
+
+# Iteration
+for asset in stream:
+    print(asset)
+
+# Stream indexing and slicing
+print(stream[0:5:2])
+
+# Loads the next 5 items that has not been loaded yet 
+# into the cache, and return them. If the stream ends, 
+# an empty list is returned, and any more calls will raise 
+# a StopIteration exception.
+stream.next_assets(5)
+
+# Expands the stream until the stream ends or is at least 100 
+# items long by loading more items from the cache.
+stream.expand(100)
+
+# Expands the stream until the end.
+stream.expand()
+
+# Convert the entire stream to a PyTorch zip.
+stream.to_pytorch(&quot;./dataset.zip&quot;, confidence_level=0.6)</code></pre>
+</doc-codeblock></div>
+</li>
+</ol>
+<doc-anchor-target id="limitations">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#limitations">#</doc-anchor-trigger>
+        <span>Limitations</span>
+    </h2>
+</doc-anchor-target>
+<ol>
+<li>You must not use a stream in 2 Python programs at a time. If you want to, create a second
+stream or quit the first program. Although you still have to re-download labels, images will be
+cached in a separate directory, so that multiple streams can access the same asset.</li>
+<li>Even if assets and their labels are deleted remotely, they will stay intact locally.
+We&#x27;ll introduce a way to discard unused streams and purge redundant images in the future.</li>
+</ol>
 
                                 
                                 <!-- Required only on API pages -->
@@ -265,6 +409,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Main", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "General use", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
