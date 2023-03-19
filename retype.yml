@@ -28,7 +28,7 @@ favicon:
   # just put a favicon.ico in your project root.
 integrations:
   googleAnalytics:
-    id: "" # Your Google Analytics measurement id.
+    id: "G-FGL623RKJY" # Your Google Analytics measurement id.
   googleTagManager:
     id: "" # Your Google Tag Manager measurement id.
 
