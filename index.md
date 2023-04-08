@@ -1,4 +1,4 @@
-![Your logo](logo.png)
+![](logo.png)
 
 # Welcome to flockfysh Docs
 
