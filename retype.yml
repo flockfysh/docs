@@ -12,12 +12,12 @@ links: # A list of custom links to add to the top bar of the generated website.
   # See also: footer.links
   - text: flockfysh # The text to use for the link
     link: https://flockfysh.tech/ # Link to an internal file or external URL.
-  - text: CheatSheet
+  - text: cheatsheet
     link: /guides/CLI/cheatsheet.md # Link to an internal file or external URL.
     icon: gear # A custom icon name, :emoji:, <svg>, or path to a file.
     iconAlign: left # Icon alignment, to the left or right. Default is left.
     target: blank
-  - text: Releases
+  - text: releases
     link: /guides/releases.md
     icon: :hourglass # Custom target. Use blank to open link in a new window.
 footer:

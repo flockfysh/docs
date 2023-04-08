@@ -9,7 +9,7 @@ Just want **quick support without any BS**? Talk to the guys *directly* thru htt
 Welcome, fellow flockfyshers! Check out the various API guides we have below, or jump into 
 a quick workflow. 
 
-## What is flockfysh? 
+## what is flockfysh? 
 flockfysh is the _ultimate solution_ to the dataset problems faced by data scientists, machine learning engineers, and researchers. You no longer have to spend **insane amounts of time and money** to build a datset. Give flockfysh a spin, and you’ll have enough resources left over to build 10 more datasets. With our cutting-edge algorithms, flockfysh can auto-generate large-scale datasets that are _performant, diverse, and tailored to your specific needs_. flockfysh will help you save time and resources, eliminate data bias, and unleash the full potential of your models and applications.
 
 More specifically, we're focused on the following:
