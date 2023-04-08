@@ -1,9 +1,7 @@
 To install 
 
-npm install retypeapp --global
+[COMMAND] npm install retypeapp --global
 
 then ff
 
-retype watchz
-
-test commit
+[COMMAND] retype watch

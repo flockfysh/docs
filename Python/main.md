@@ -1,18 +1,3 @@
-## Build and upload to PyPI
-
-To build the package: 
-```shell
-pip install build
-python -m build
-```
-
-To upload the package: 
-```shell
-pip install twine
-python -m twine upload --repository pypi dist/*
-```
-
-
 <!-- # ffysh
 
 [Download example dataset (**DO NOT EXTRACT
