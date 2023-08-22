@@ -1,22 +1,53 @@
-![](logo.png)
 
-# Welcome to flockfysh Docs
+# Overview
+
+> flockfysh, with it's API and CLI, is centralizing data collection, management, and making machine learning more accessible for everyone. 
 
 !!!
 Just want **quick support without any BS**? Talk to the guys *directly* thru https://discord.gg/3pUUQA7b
 !!!
 
-Welcome, fellow flockfyshers! Check out the various API guides we have below, or jump into 
-a quick workflow. 
 
-## what is flockfysh? 
-flockfysh is the _ultimate solution_ to the dataset problems faced by data scientists, machine learning engineers, and researchers. You no longer have to spend **insane amounts of time and money** to build a datset. Give flockfysh a spin, and you’ll have enough resources left over to build 10 more datasets. With our cutting-edge algorithms, flockfysh can auto-generate large-scale datasets that are _performant, diverse, and tailored to your specific needs_. flockfysh will help you save time and resources, eliminate data bias, and unleash the full potential of your models and applications.
+### The Quick Run-Down 
+flockfysh is an open platform that enables researchers to be able to openly collect data, filter and validate incoming data points, and then easily run ML pipelines without requiring expensive, in-house computational power.
 
-More specifically, we're focused on the following:
+We function as an exchange that supports _crowdbuilding_ or _buying/selling_ large scale datasets, with options to directly integrate your data collected with state of the art data lakes & warehouses, alongside your fan favorite ML services.
+
+We are a general purpose data collection & management platform, and have seen the most common trends on our platform being the following:
+
 1. State of the Art Computer Vision Problems - Segmentation, Detection, and Classification
 2. State of the Natural Language Processing Problems - Large Language Modeling (think GPT)
 
-We're currently in **private beta**, feel free to join the waitlist at [flockfysh.tech](https://flockfysh.tech) or shoot us an email directly at [hey@flockfysh.tech](mailto:hey@flockfysh.tech) if you'd like to join in with a specific use case.
+## Goals 
+
+### Promote OPEN Artificial Intelligence
+
+We're strongly driven by a vision that one day, we'll be able to come together to _openly_ build models, and _come together to collect the data for_ complex AI. AI, as it currently is, hugely relies on large amounts of training data, imprisoning it to the confines of those who can afford it.
+
+### Control.
+
+The most important focus, by far, is on _data ethics_. We empower users to be able to implement their own data privacy policies through a public API, which restricts access to the data and can be used to enforce permissible **commercially** viable licenses, such as by limiting data usage, and restricting how other end users are able to view your data. 
+
+### Build
+
+So you've come up with an idea. You've probably scanned some open dataset platform websites, competitions, and realized that data that fits what you're looking for is really hard to come by. 
+
+flockfysh enables you to directly contact people with data, interact with them, and openly source their data in a way that's consensual, and profitable.
+
+## Status 
+
+We're currently in **public beta**, feel free to try out the early snapshot of the platform or shoot us an email directly at [hey@flockfysh.tech](mailto:hey@flockfysh.tech) if you'd like to join in with a specific use case.
+
+## how to reach us quickly
+
+Docs are great and all, but we also know the pain of having to wade through piles of useless crap. If you just want an answer, and want it quickly, **drop by our Discord server** for rapid responses - we're literally online 24/7 (yeah, we have no lives).
+
+Link: https://discord.gg/3pUUQA7b
+
+
+
+
+
 
 ## the 30 second tour for researchers
 
@@ -31,14 +62,3 @@ All of our systems are built with a focus on minimizing the amount of pain (we w
 If you're working on a process that involves flockfysh datasets, we *heavily* recommend checking out our [API](API/index.md). We've geared our API to be easy to use, and minimally priced (if any). 
 
 We recommend using our API in tandem with the Python module - we have a good amount of support for both, and we're constantly working on improvements, based on your suggestions. Again, if there's anything we can help with or any issues, drop us an email @ [support@flockfysh.tech](mailto:support@flockfysh.tech). 
-
-
-## how to reach us quickly
-
-Docs are great and all, but we also know the pain of having to wade through piles of useless crap. If you just want an answer, and want it quickly, **drop by our Discord server** for rapid responses - we're literally online 24/7 (yeah, we have no lives).
-
-Link: https://discord.gg/3pUUQA7b
-
-
-
-

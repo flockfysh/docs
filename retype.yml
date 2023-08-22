@@ -1,6 +1,6 @@
 input: .
 output: .retype
-url: https://docs.flockfysh.tech/
+url: https://docs.flockfysh.ai/
 branding:
   title: flockfysh
 
@@ -8,10 +8,11 @@ branding:
   logo: static/logo.png
   logoDark: static/logo-dark.pngIts
   logoAlign: right
+
 links: # A list of custom links to add to the top bar of the generated website.
   # See also: footer.links
   - text: flockfysh # The text to use for the link
-    link: https://flockfysh.tech/ # Link to an internal file or external URL.
+    link: https://flockfysh.ai/ # Link to an internal file or external URL.
   - text: cheatsheet
     link: /guides/CLI/cheatsheet.md # Link to an internal file or external URL.
     icon: gear # A custom icon name, :emoji:, <svg>, or path to a file.
@@ -19,7 +20,9 @@ links: # A list of custom links to add to the top bar of the generated website.
     target: blank
   - text: releases
     link: /guides/releases.md
-    icon: :hourglass # Custom target. Use blank to open link in a new window.
+    icon: twitter # Custom target. Use blank to open link in a new window.
+  
+
 footer:
   copyright: "&copy; Copyright [flockfysh, Inc.](https://flockfysh.tech/) {{ year }}. All rights reserved."
 
