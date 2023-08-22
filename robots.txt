@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://docs.flockfysh.tech/sitemap.xml.gz
+Sitemap: https://docs.flockfysh.ai/sitemap.xml.gz
